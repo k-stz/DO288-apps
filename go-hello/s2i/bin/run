@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "lets run some stuff prior"
+
+exec /usr/libexec/s2i/run --lang de
