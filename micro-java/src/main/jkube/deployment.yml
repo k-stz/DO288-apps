@@ -32,6 +32,9 @@ spec:
         image: micro-java:1.0
         imagePullPolicy: IfNotPresent
         name: quarkus
+        envFrom:
+          - configMapRef:
+              name: configmap-hello
         ports:
         - containerPort: 8080
           name: http
